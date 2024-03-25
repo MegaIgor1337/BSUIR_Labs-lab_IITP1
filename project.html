@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подробности проекта</title>
+    <link rel="stylesheet" href="styles/style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="assets/logo.jpg" alt="Logo" width="35" height="35">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="projects.html">Расписание занятий</a></li>
+                </ul>
+            </div>
+            <div class="burger-menu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+    </header> 
+    <main>
+<button id="sort-comments-button">Отсортировать по дате</button>
+
+        <section class="project" id="project-details">
+        </section>
+        <section class="comments">
+            <div id="comments-container">
+            </div>
+            <form id="comment-form">
+                <div>
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div>
+                    <label for="comment-text">Комментарий:</label>
+                    <textarea id="comment-text" required></textarea>
+                </div>
+                <button type="submit">Добавить комментарий</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Курс по программированию 2024 © Все права защищены</p>
+    </footer>
+    <script src="scripts/project.js"></script>
+</body>
+</html>

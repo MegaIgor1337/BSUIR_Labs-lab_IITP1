@@ -1,0 +1,217 @@
+body {
+
+    background-color: pink;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+}
+.wrapper {
+    position: absolute;
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+    padding: 15px;
+    overflow: auto;
+}
+
+
+.table-wrapper {
+    position: relative;
+
+    width: 100%;
+    height: calc(100vh - 90px);
+    overflow: auto;
+}
+
+table {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    border-collapse: separate; /* Don't collapse */
+    border-spacing: 0;
+}
+thead {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    background-color: pink;
+}
+td {
+    position: relative;
+    padding: 8px;
+    text-align: left;
+    height: 50px;
+    border: 1px solid red;
+    color: red;
+    width: 25%;
+    max-height: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+a{
+    text-decoration: none;
+    color: red;
+}
+
+
+td:first-child {
+    width: 20%;
+}
+
+tr th:not(:first-child), td:not(:first-child) {
+    border-left: none;
+}
+tr:not(:first-child) th, td {
+    border-top: none;
+}
+
+th {
+    padding: 8px;
+    text-align: left;
+    color: red;
+    border: 2px solid red;
+    background-color: pink;
+}
+
+td:hover{
+    transition: 0.5s ease-in-out;
+    color: blue;
+}
+
+.image-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.add-button {
+    background-color: red;
+    color: pink;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 50;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(88, 255, 124, 0.4);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    background-color: rgb(0, 255, 255);
+    border: 1px solid #05bfe0;
+    width: 400px;
+    padding: 15px;
+}
+
+ .modal-header {
+    margin-top: 0;
+ }
+ #form {
+    width: 100%;
+ }
+.form-group {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group .text-input {
+    width: -webkit-fill-available;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+.file-input {
+    width: 240px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+.btn-submit {
+    background-color: darkblue;
+    color: white;
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.blur {
+    backdrop-filter: blur(6px);
+}
+@media screen and (max-width: 600px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+  
+    th, td {
+        white-space: normal;
+        padding: 5px;
+    }
+    .modal-content {
+        width: 300px;
+    }
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

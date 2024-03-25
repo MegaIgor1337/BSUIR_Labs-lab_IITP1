@@ -1,0 +1,75 @@
+[
+    {
+      "title": "Основы HTML",
+      "content": "Количество занятий 12",
+      "date": "2024-03-22T10:30:00",
+      "image": "assets/htmlImg.png"
+    },
+    {
+      "title": "Основы CSS",
+      "content": "Количество занятий 18",
+      "date": "2024-03-23T11:00:00",
+      "image": "assets/cssImg.png"
+    },
+    {
+      "title": "Основы JS",
+      "content": "Количество занятий 9",
+      "date": "2024-03-24T12:00:00",
+      "image": "assets/jsImg.jpg"
+    },
+    {
+        "title": "Основы HTML",
+        "content": "Количество занятий 12",
+        "date": "2024-03-22T10:30:00",
+        "image": "assets/htmlImg.png"
+      },
+      {
+        "title": "Основы CSS",
+        "content": "Количество занятий 18",
+        "date": "2024-03-23T11:00:00",
+        "image": "assets/cssImg.png"
+      },
+      {
+        "title": "Основы JS",
+        "content": "Количество занятий 9",
+        "date": "2024-03-24T12:00:00",
+        "image": "assets/jsImg.jpg"
+      },
+      {
+        "title": "Основы HTML",
+        "content": "Количество занятий 12",
+        "date": "2024-03-22T10:30:00",
+        "image": "assets/htmlImg.png"
+      },
+      {
+        "title": "Основы CSS",
+        "content": "Количество занятий 18",
+        "date": "2024-03-23T11:00:00",
+        "image": "assets/cssImg.png"
+      },
+      {
+        "title": "Основы JS",
+        "content": "Количество занятий 9",
+        "date": "2024-03-24T12:00:00",
+        "image": "assets/jsImg.jpg"
+      },
+      {
+        "title": "Основы HTML",
+        "content": "Количество занятий 12",
+        "date": "2024-03-22T10:30:00",
+        "image": "assets/htmlImg.png"
+      },
+      {
+        "title": "Основы CSS",
+        "content": "Количество занятий 18",
+        "date": "2024-03-23T11:00:00",
+        "image": "assets/cssImg.png"
+      },
+      {
+        "title": "Основы JS",
+        "content": "Количество занятий 9",
+        "date": "2024-03-24T12:00:00",
+        "image": "assets/jsImg.jpg"
+      }
+  ]
+  

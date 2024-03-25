@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курс по программированию</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<header>
+    <nav>
+        <div class="logo">
+            <img src="assets/logo.jpg" alt="Logo" width="35" height="35">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="projects.html">Расписание занятий</a></li>
+            </ul>
+        </div>
+        <div class="burger-menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+</header>
+<main>
+    <label for="search">Поиск по названию курса:</label><br>
+<input type="text" id="search" name="search">
+<button id="search-button">Найти</button> 
+
+<button id="sort-button">Отсортировать по дате добавления</button> 
+
+
+
+    <form id="courses-form">
+        <label for="course-title">Заголовок:</label><br>
+        <input type="text" id="course-title" name="title" required><br>
+        
+        <label for="content">Содержание:</label><br>
+        <textarea id="content" name="content" required></textarea><br>
+        <label for="image">Изображение:</label><br>
+        <input type="file" id="image" name="image" accept="image/*" required><br> 
+        <button type="submit">Добавить курс</button>
+    </form>
+
+    <div id="courses-preview" class="grid" data-courses-preview>
+    </div>
+
+    <div id="update-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal" class="close">&times;</span>
+            <h2>Обновить курс</h2>
+            <form id="update-form">
+                <label for="update-title">Новое название:</label><br>
+                <input type="text" id="update-title" name="update-title" required><br>
+                <label for="update-content">Н
+                    овое содержание:</label><br>
+                    <textarea id="update-content" name="update-content" required></textarea><br>
+                    <label for="update-image">Новое изображение:</label><br>
+                    <input type="file" id="update-image" name="update-image" accept="image/*" required><br>
+                    <button type="submit">Обновить</button>
+                    </form>
+                    </div>
+                    </div>
+                    
+                    </main>
+                    <footer>
+                        <p>Курс по программированию 2024 © Все права защищены</p>
+                    </footer>
+                    <script src="data/courses.json"></script>
+                    <script src="scripts/script1.js"></script>
+                    <script src="scripts/script2.js"></script>
+                    </body>
+                    </html>

@@ -1,0 +1,281 @@
+body {
+    position: absolute;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.reviews {
+    padding: 8px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    height: 30px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    width: calc(100% - 40px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu ul li:last-child {
+    margin-right: 0;
+}
+
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.burger-menu {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .menu ul {
+        display: none;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    .burger-menu div {
+        width: 25px;
+        height: 3px;
+        background-color: #fff;
+        margin: 5px;
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+.preview {
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+
+footer {
+    height: 50px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+}
+
+main {
+    position: relative;
+    ;
+    height: calc(100% - 90px);
+    margin-top: 50px;
+}
+
+.project {
+    padding: 8px;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+p {
+    margin-bottom: 16px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.project {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.reviews {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+.center {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-group{
+    margin-bottom: 5px;
+}
+
+.review {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.review h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.review p {
+    margin-bottom: 12px;
+}
+
+.rating {
+    color: orange;
+    margin-bottom: 12px;
+}
+
+.rating .fas {
+    margin-right: 4px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-text {
+    font-size: 14px;
+}
+
+.footer-social {
+    font-size: 18px;
+}
+
+.footer-social i {
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.comments {
+    overflow-y: auto; 
+    max-height: 400px; 
+}
+#sort-comments-button {
+    background-color: #4CAF50;
+    color: white; 
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+#sort-comments-button:hover {
+    background-color: #45a049; 
+}
+
+#comment-form button[type="submit"] {
+    background-color: #008CBA; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+#comment-form button[type="submit"]:hover {
+    background-color: #005f6b; 
+}
+
+.delete-comment-button {
+    background-color: #f44336; 
+    color: white; 
+    padding: 8px 16px; 
+    border: none;
+    border-radius: 4px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+.delete-comment-button:hover {
+    background-color: #d32f2f; 
+}
+
+.update-comment-button {
+    background-color: #2196F3; 
+    color: white; 
+    padding: 8px 16px; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+.update-comment-button:hover {
+    background-color: #1976D2; 
+}
+.comment button {
+    margin-top: 8px;
+    background-color: #f44336;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.comment button.edit {
+    background-color: #2196F3;
+}
